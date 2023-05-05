@@ -1,0 +1,337 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./fonts/Gilroy-Regular.eot');
+    src: local('Gilroy Regular'), local('Gilroy-Regular'),
+        url('./fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('./fonts/Gilroy-Regular.woff') format('woff'),
+        url('./fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-bold';
+    src: url('./fonts/Gilroy-Bold.eot');
+    src: local('Gilroy Bold'), local('Gilroy-Bold'),
+        url('./fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Gilroy-Bold.woff2') format('woff2'),
+        url('./fonts/Gilroy-Bold.woff') format('woff'),
+        url('./fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+* {
+    padding: 0%;
+    margin: 0;
+    font-family: 'Gilroy', Arial, Helvetica, sans-serif;
+}
+p {
+    font-size: 18px;
+}
+h2 {
+    font-size: 34px;
+    font-family: "Gilroy-bold";
+}
+.layout {
+    width: 950px;
+    margin: 0 auto;
+}
+
+.main {
+    min-height: 710px;
+    padding: 110px 0 50px;
+    max-height: 100vh;
+}
+
+.main-info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 40px; 
+}
+
+.main-info-lang {
+    transform: rotate(270deg);
+    margin-bottom: 20px;
+    margin-right: -19px;
+    z-index: 1;
+}
+
+.main-image img {
+    width: 100%;
+}
+
+.main-image {
+    width: 100%;
+}
+
+.main-info h1 {
+    font-size: 34px;
+    font-family: "Gilroy-bold";
+}
+
+.main-info-lang a {
+    font-size: 16px;
+    text-decoration: none;
+    font-family: "Gilroy-bold";
+    color: #828282;
+    
+}
+.main-info-lang a.active {
+    color: #000000;
+}
+.separator {
+    width: 2px;
+    height: 12px;
+    background-color: #000000;
+    display: inline-block;
+}
+
+.about {
+    text-align: center;
+    padding: 60px 0;
+}
+
+#about {
+    background-color: #F6F6F6;
+}
+
+.about p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+
+#portfolio {
+    background-color: #F6F6F6;
+    text-align: center;
+    padding: 45px 0px 5px;
+}
+
+#portfolio h3 {
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+#portfolio a {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 48px;
+    color: #070707;
+}
+
+.portfolio-work {
+    display: flex;
+    flex-direction: column;
+    margin: 45px 0 100px;
+}
+
+
+.skills, .contacts {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.skills-description {
+    margin: 70px 0 83px;
+}
+
+.skills-programs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-programs-item p {
+    margin: 27px 0;
+}
+
+.contacts-socials {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    gap: 61px;
+}
+
+.contacts button {
+    padding: 5px 20px;
+    background-color: black;
+    border-radius: 25px;
+    color: white;
+    margin: 30px 0;
+
+}
+
+.like {
+    padding: 45px 0 74px;
+    color: #828282;
+    text-align: center;
+    font-size: 14px;
+}
+
+.main-image-mobile {
+    display: none;
+}
+.menu {
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 30;
+}
+
+.menu-items{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #828282;
+    padding: 15px 0 30px;
+
+}
+
+.menu a{
+    color: #828282;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.menu a.active{
+    color: black;
+    font-family: "Gilroy-bold";
+}
+@media (max-width:450px) { 
+    .menu{
+        display: none;
+    }
+    .main-image-desctop {
+        display: none;
+    }
+    .main-image-mobile{
+        display: block;
+    }
+    .layout {
+        width: 80%;
+    }
+    .main-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .main-info-lang {
+        display: none;
+    } 
+    .main {
+        height: auto;
+        min-height: unset;
+        padding-top:45px;
+        max-height: unset;
+    }
+    
+    .skills-programs {
+        flex-direction: column;
+        gap: 80px;
+    }
+    .contacts h2 {
+        margin: 0 0 20px;
+        font-size: 24px;
+    }
+    .contacts-socials {
+        width: 100%;
+        gap: 0;
+        justify-content: space-between;
+    }
+    .contacts button {
+        width: 100%;
+        font-size: 18px;
+        padding:10px 20px ;
+        font-family: "Gilroy-bold";
+    }
+
+    .contacts p {
+        font-size: 18px;
+    }
+    .contacts .like {
+        font-size: 18px;
+    }
+    .menu-button {
+        position: fixed;
+        width: 33px;
+        height: 20px;   
+        top: 50px;
+        right: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 51;
+    }
+    .menu-button div {
+        width: 100%;
+        height: 3px;
+        background-color: black;
+    }
+    .menu-mobile.active {
+        display: block;
+    }
+
+    .menu-mobile {
+        display: none;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        background-color: #fff;
+        top: 0%;
+        z-index: 50;
+    }
+    .menu-mobile-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        padding: 66px 0 0 26px;
+        font-size: 33px;  
+        line-height: 42px;
+    }
+
+    .menu-mobile-content a {
+        color: #828282;
+        text-decoration: none;
+        font-weight: 700;
+        font-family: "Gilroy-bold"  
+    }
+    
+    .menu-mobile-content a.active {
+        color: #000000;
+    
+    }
+
+    .menu-mobile-lang {
+        bottom: 85px;
+        right: -18px;
+        position: absolute;
+        transform: rotate(90deg);
+    }
+
+    .menu-mobile-lang a {
+        font-size: 34px;
+        text-decoration: none;
+        color: #828282;
+        line-height: 42px;
+        font-weight: 600;
+        font-family: "Gilroy-bold"
+
+    }
+    .menu-mobile-lang a.active {
+        color: #000000  ;
+    }
+    .menu-mobile-lang span {
+        font-size: 34px;
+        font-family: "Gilroy-bold";
+    }
+}
+
+
+
